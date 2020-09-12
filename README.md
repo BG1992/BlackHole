@@ -30,7 +30,7 @@ c) Repeat b) till the lack of updates.
 
 6) States are converted to tuple: (number of red pawns, index of the combination representing positions of the red pawns, number of green pawns, index of the combination representing positions of the green pawns, player to move). Index of the combination is described here: https://en.wikipedia.org/wiki/Combinatorial_number_system.
 
-7) AI does not rush into a win from draw positions - for instance, choosing variants that may potentially be traps for the player. Therefore, it may happen that AI repeats the same moves - this means such state/states do not allow AI to force the win.
+7) AI does not rush into a win from draw positions - for instance, choosing variants that may potentially be traps for the player. Therefore, it may happen that AI repeats the same moves - this means such state/states do not allow AI to force the win. AI may also easily allow the player to remove first pawn - however, the second pawn may be much harder to remove :)
 
 To get the details of the calculation, have a look at files: blackhole_helper.py, blackhole_generation.py, blackhole_iteration.py.
 
