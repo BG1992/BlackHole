@@ -24,3 +24,14 @@ c) Repeat b) till the lack of updates.
 5) File blackhole_scores.csv contains only winning/losing states. If some state is a draw, it is not contained in the file (to reduce size of the file).
 
 6) States are converted to tuple: (number of red pawns, index of the combination representing positions of the red pawns, number of green pawns, index of the combination representing positions of the green pawns, player to move). Index of the combination is described here: https://en.wikipedia.org/wiki/Combinatorial_number_system.
+
+To get the details of the calculation, have a look at files: blackhole_helper.py, blackhole_generation.py, blackhole_iteration.py.
+
+To play with (as seems to be :)) unbeatable AI, follow the steps:
+
+1) Download all images that names start with 'cell'.
+2) Download and unzip blackhole_scores.csv file.
+3) Place images and blackhole_scores.csv file under some folder ('D://' in my case), update folder variable in blackhole_gui.py file.
+4) Make sure tkinter library is imported. I was using version 8.6.
+5) Run the script blackhole_gui.py. Around a minute is needed to get scores from the csv file.
+6) Enjoy ;)
