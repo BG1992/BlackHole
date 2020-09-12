@@ -4,7 +4,7 @@ Looks like I have managed to strongly solve the Black Hole: Escape abstract stra
 
 In a nutshell, the game is played on 5x5 board with a hole in the center. Each of two players has four pawns, placed as in the picture below:
 
-
+![Starting position](https://github.com/BG1992/BlackHole/blob/master/bh_start.png)
 
 Players alternate turns. A turn in the game consists in moving chosen pawn either horizontally or vertically till stopped by other pawn (it does not matter whether it is player's pawn or enemy's pawn) or an edge of the board. While moving, a pawn jumps over the hole, if the hole pass through its route. However, if the pawn is stopped by other pawn while landed on the hole, the pawn is removed. Player who manages to remove two own pawns, wins. Pawns cannot be moved diagonally, cannot be captured.
 
