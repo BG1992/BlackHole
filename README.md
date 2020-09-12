@@ -4,6 +4,8 @@ Looks like I have managed to strongly solve the Black Hole: Escape abstract stra
 
 In a nutshell, the game is played on 5x5 board with a hole in the center. Each of two players has four pawns, placed as in the picture below:
 
+
+
 Players alternate turns. A turn in the game consists in moving chosen pawn either horizontally or vertically till stopped by other pawn (it does not matter whether it is player's pawn or enemy's pawn) or an edge of the board. While moving, a pawn jumps over the hole, if the hole pass through its route. However, if the pawn is stopped by other pawn while landed on the hole, the pawn is removed. Player who manages to remove two own pawns, wins. Pawns cannot be moved diagonally, cannot be captured.
 
 Based on my calculations, I am claiming neither player is able to force the win, assuming both play perfectly.
@@ -13,8 +15,11 @@ Some technical details on the calculations:
 1) While computing, the states space has been split into four separate classes: (3x3, 3x4, 4x3, 4x4), where axb stands for the subspace containing states with a red pawns and b green pawns.
 
 2) Since the game is described by Directed Cyclic Graphs (DCGs) - no dfs/bfs was applied. To overcome the issue with repeated states, an iterative approach was used, till the lack of updates of states:
+
 a) For each state of the given subspace mark terminal states as 1 or -1, depending on who is a winner of this state and remaining states as 0.
+
 b) Go through all states of the given subspace and for each state marked as 0 and compute max/min (depending on who is to move) of scores of its children.
+
 c) Repeat b) till the lack of updates.
 
 3) Children were generated before the iteration processes and stored in csv. After iteration processes, scores have been saved and stored in csv.
@@ -33,5 +38,5 @@ To play with (as seems to be :)) unbeatable AI, follow the steps:
 2) Download and unzip blackhole_scores.csv file.
 3) Place images and blackhole_scores.csv file in some folder ('D://' in my case), update folder variable in blackhole_gui.py file.
 4) Make sure tkinter library is imported. I was using version 8.6.
-5) Run the script blackhole_gui.py. Around a minute is needed to get scores from the csv file.
+5) Run the script blackhole_gui.py. Around 1-2 minutes are needed to get scores from the csv file.
 6) Enjoy ;)
