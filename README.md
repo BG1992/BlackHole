@@ -31,7 +31,7 @@ To play with (as seems to be :)) unbeatable AI, follow the steps:
 
 1) Download all images that names start with 'cell'.
 2) Download and unzip blackhole_scores.csv file.
-3) Place images and blackhole_scores.csv file under some folder ('D://' in my case), update folder variable in blackhole_gui.py file.
+3) Place images and blackhole_scores.csv file in some folder ('D://' in my case), update folder variable in blackhole_gui.py file.
 4) Make sure tkinter library is imported. I was using version 8.6.
 5) Run the script blackhole_gui.py. Around a minute is needed to get scores from the csv file.
 6) Enjoy ;)
