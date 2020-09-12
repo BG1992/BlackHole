@@ -1,4 +1,4 @@
-#Iteration process for 4x4 subspace. Same can be easily done for the rest of subspaces.
+#Iteration process for 4x4 subspace. Same can be easily done for the rest of subspaces. 
 
 import csv
 from blackhole_helper import *
