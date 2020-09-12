@@ -1,4 +1,4 @@
-#Generation of the 4x4 subspace. Same can be easily done for the rest of subspaces.
+#Generation of the 4x4 subspace. Same can be easily done for the rest of subspaces. 
 
 from itertools import combinations
 from blackhole_helper import *
